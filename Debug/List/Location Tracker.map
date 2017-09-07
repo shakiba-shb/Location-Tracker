@@ -1,0 +1,51 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+line                                                                              0x0271     128
+lats                                                                              0x02F1     600
+lngs                                                                              0x0549     600
+history                                                                           0x07A1       2
+rx_buffer                                                                         0x07A3       8
+rx_wr_index                                                                       0x07AB       1
+rx_rd_index                                                                       0x07AC       1
+rx_counter                                                                        0x07AD       1
+tx_buffer                                                                         0x07AE       8
+tx_wr_index                                                                       0x07B6       1
+tx_rd_index                                                                       0x07B7       1
+tx_counter                                                                        0x07B8       1
+_base_y                                                                           0x07B9       4
+_lcd_x                                                                            0x07BD       1
+_lcd_y                                                                            0x07BE       1
+_lcd_maxx                                                                         0x07BF       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+line_index                                                                        R4,R5        2
+j                                                                                 R6,R7        2
+i                                                                                 R8,R9        2
+index                                                                             R10,R11      2
+display_index                                                                     R12,R13      2
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer1_compa_isr                                                                  0x00082    102
+usart_rx_isr                                                                      0x000E8     55
+usart_tx_isr                                                                      0x0011F     36
+putchar                                                                           0x00143     41
+lcd_display                                                                       0x0016C     77
+main                                                                              0x001B9     94
+puts                                                                              0x00217     14
+_lcd_write_nibble_G102                                                            0x00225     20
+_lcd_write_data                                                                   0x00239     12
+lcd_gotoxy                                                                        0x00245     17
+lcd_clear                                                                         0x00256     14
+lcd_putchar                                                                       0x00264     32
+lcd_puts                                                                          0x00284     12
+lcd_init                                                                          0x00290     47
